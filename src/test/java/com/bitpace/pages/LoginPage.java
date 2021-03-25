@@ -5,6 +5,7 @@ import com.bitpace.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.net.MalformedURLException;
 import java.util.Set;
 
 public class LoginPage extends BasePage{
@@ -27,9 +28,7 @@ public class LoginPage extends BasePage{
 
 
 
-
-
-   public void switchBrowser(){
+    public void switchBrowser() {
 
        String currentHandle= Driver.get().getWindowHandle();
        Set<String> handles=Driver.get().getWindowHandles();

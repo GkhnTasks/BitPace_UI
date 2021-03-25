@@ -52,12 +52,12 @@ public class MakePaymentPage extends  BasePage{
 
 
 
-    public WebElement selectCurrency(){
+    public WebElement selectCurrency(String currency){
         currencyDropDown.click();
         BrowserUtils.waitFor(1);
         WebElement item = null;
         for (WebElement element : currencyList) {
-            if (element.getText().equals(ConfigurationReader.get("currency"))){
+            if (element.getText().equals(currency)){
                 item=element;
                 BrowserUtils.waitFor(1);
             }
@@ -65,12 +65,12 @@ public class MakePaymentPage extends  BasePage{
         return  item;
     }
 
-    public WebElement selectCoin(){
+    public WebElement selectCoin(String coin){
         coinDropDown.click();
         BrowserUtils.waitFor(1);
         WebElement item = null;
         for (WebElement element : coinList) {
-            if (element.getText().equals(ConfigurationReader.get("coin"))){
+            if (element.getText().equals(coin)){
                 item=element;
                 BrowserUtils.waitFor(1);
             }

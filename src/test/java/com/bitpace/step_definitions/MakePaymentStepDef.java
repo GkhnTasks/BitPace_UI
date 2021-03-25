@@ -50,9 +50,9 @@ public class MakePaymentStepDef {
         Assert.assertEquals(currency,allCurrency);
     }
 
-    @When("user select currency")
-    public void user_select_currency() {
-        new MakePaymentPage().selectCurrency().click();
+    @When("user select currency {string}")
+    public void user_select_currency(String currency) {
+        new MakePaymentPage().selectCurrency(currency).click();
         BrowserUtils.waitFor(2);
     }
 
@@ -68,24 +68,30 @@ public class MakePaymentStepDef {
     @Given("enter value in  EUR Amount box")
     public void enter_value_in_EUR_Amount_box() {
         new MakePaymentPage().currencyAmountBox.sendKeys(ConfigurationReader.get("currency_amount"));
-        new MakePaymentPage().coinAmountBox.click();
+       // new MakePaymentPage().coinAmountBox.click();
         BrowserUtils.waitFor(2);
 
     }
+    @When("user select cryptocurrency {string}")
+    public void user_select_cryptocurrency(String coins) {
+
+      new MakePaymentPage().selectCoin(coins).click();
+      BrowserUtils.waitFor(2);
+    }
 
 
-    @Then("user match UI-API information make payment page")
-    public void match_UI_API_information_make_payment_page() {
+    @Then("user match UI-API information make payment page {string} and {string}")
+    public void match_UI_API_information_make_payment_page(String coin,String currency) {
         //API INFORMATION
 
         //create a map to keep request json body information
         Map<String,Object> requestMap = new HashMap<>();
         //adding value that we want to post
-        requestMap.put("cryptocurrency",ConfigurationReader.get("coin"));
+        requestMap.put("cryptocurrency",coin);
         requestMap.put("cryptocurrency_amount","null");
         requestMap.put("currency_amount",ConfigurationReader.get("currency_amount"));
         requestMap.put("order_type","WITHDRAW");
-        requestMap.put("currency",ConfigurationReader.get("currency"));
+        requestMap.put("currency",currency);
         requestMap.put("exclude_withdraw_fee",true);
 
 
@@ -134,7 +140,7 @@ public class MakePaymentStepDef {
         String FıatAmount=String.valueOf(UI_FIAT_amount);
         SoftAssertions softAssertions = new SoftAssertions();
         softAssertions.assertThat(FıatAmount.equals(df.format(totalAmount)));
-        //Assert.assertEquals(FıatAmount,df.format(totalAmount));
+        Assert.assertEquals(FıatAmount,df.format(totalAmount));
         softAssertions.assertAll();
 
 

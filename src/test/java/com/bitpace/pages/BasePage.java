@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.net.MalformedURLException;
+
 public abstract class BasePage {
 
-     public BasePage(){
+     public BasePage() {
          PageFactory.initElements(Driver.get(),this);
      }
      @FindBy(css="[width='42']")
@@ -16,6 +18,7 @@ public abstract class BasePage {
 
      @FindBy(xpath = "//button[contains(text(),'Logout')]")
      public WebElement logout;
+
 
 
 

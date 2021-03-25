@@ -18,12 +18,13 @@ Feature: Make Payment
     |EUR|
 
   Scenario:User see currency title
-    When user select currency
+    When user select currency "EUR"
     Then user see currency title
   @admin
   Scenario: user match UI-API information
     Given enter value in  EUR Amount box
-    Then user match UI-API information make payment page
+    When user select cryptocurrency "ETH"
+    Then user match UI-API information make payment page "ETH" and "EUR"
 
 
 

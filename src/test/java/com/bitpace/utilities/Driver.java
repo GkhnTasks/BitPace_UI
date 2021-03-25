@@ -1,6 +1,5 @@
 package com.bitpace.utilities;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +16,8 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Driver {
     private Driver() {
@@ -76,6 +76,25 @@ public class Driver {
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
+                case "browserStack":
+                    final String USERNAME = "gokhanguzelyurt1";
+                    final String AUTOMATE_KEY = "L1PJccVqHxNt2hkAZkNQ";
+                    final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+                    DesiredCapabilities caps = new DesiredCapabilities();
+                    caps.setCapability("os", "Windows");
+                    caps.setCapability("os_version", "10");
+                    caps.setCapability("browser", "Chrome");
+                    caps.setCapability("browser_version", "latest");
+                    caps.setCapability("project", "Bitpace");
+                    caps.setCapability("build", "Bitpace");
+                    String idForTxtFile = new SimpleDateFormat("dd.MM.yyyy_HH.mm.ss").format(new Date());
+                    caps.setCapability("name", idForTxtFile+" Smoke_Test");
+                    try {
+                        driverPool.set(new RemoteWebDriver(new URL(URL), caps));
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+
             }
         }
         return driverPool.get();

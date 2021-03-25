@@ -11,6 +11,8 @@ import org.junit.Assert;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.net.MalformedURLException;
+
 public class LoginStepDef {
 
     @Given("the user is on the login page")
@@ -28,7 +30,7 @@ public class LoginStepDef {
     }
 
     @When("the user enters the {string} information")
-    public void the_user_enters_the_information(String userType) {
+    public void the_user_enters_the_information(String userType)  {
     // new LoginPage().switchBrowser();
      new LoginPage().loginOptional(userType);
      BrowserUtils.waitFor(3);

@@ -26,11 +26,11 @@ public class Hooks {
 		DBUtils.destroyConnection();
 
 	}
-	
+
 	@Before
 	public void setUp() {
 		// we put a logic that should apply to every scenario
-		Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Driver.get().manage().window().maximize();
 
 	}
@@ -45,6 +45,8 @@ public class Hooks {
 		Driver.closeDriver();
 
 	}
+
+
 	
 	
 	
