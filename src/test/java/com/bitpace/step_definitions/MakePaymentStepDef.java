@@ -4,6 +4,7 @@ import com.bitpace.pages.MakePaymentPage;
 import com.bitpace.utilities.ApiUtils;
 import com.bitpace.utilities.BrowserUtils;
 import com.bitpace.utilities.ConfigurationReader;
+import com.bitpace.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,6 +12,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
+import org.openqa.selenium.interactions.Actions;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -29,7 +32,14 @@ public class MakePaymentStepDef {
         new MakePaymentPage().makePaymentList.click();
         BrowserUtils.waitFor(1);
 
+
     }
+    @When("user click Close on the 2FA message")
+    public void user_click_Close_on_the_2FA_message() {
+        new MakePaymentPage().closeButton.click();
+        BrowserUtils.waitFor(2);
+    }
+
 
     @Then("user see Make Payment page")
     public void user_see_Make_Payment_page() {
@@ -67,6 +77,10 @@ public class MakePaymentStepDef {
 
     @Given("enter value in  EUR Amount box")
     public void enter_value_in_EUR_Amount_box() {
+        Actions actions = new Actions(Driver.get());
+        actions.click(new MakePaymentPage().walletBox).perform();
+
+        BrowserUtils.waitFor(1);
         new MakePaymentPage().currencyAmountBox.sendKeys(ConfigurationReader.get("currency_amount"));
        // new MakePaymentPage().coinAmountBox.click();
         BrowserUtils.waitFor(2);
@@ -142,13 +156,35 @@ public class MakePaymentStepDef {
         softAssertions.assertThat(FıatAmount.equals(df.format(totalAmount)));
         Assert.assertEquals(FıatAmount,df.format(totalAmount));
         softAssertions.assertAll();
+    }
+    @Then("user see all title")
+    public void user_see_all_title(List<String> allTitle) {
+       // BrowserUtils.clickWithJS(new MakePaymentPage().walletBox);
 
+        List<String> actualTitle=BrowserUtils.getElementsText(new MakePaymentPage().historyTitle);
+        int i=0;
+        for (String s : actualTitle) {
+            Assert.assertTrue(s.contains(allTitle.get(i)));
+            i++;
+        }
 
+    }
+    @When("user enter wallet address")
+    public void user_enter_wallet_address() {
+        new MakePaymentPage().walletBox.sendKeys(ConfigurationReader.get("wallet_address"));
+    }
 
-
-
-
-
+    @When("user click Send button")
+    public void user_click_Send_button() {
+        new MakePaymentPage().sendButton.click();
+    }
+    @Then("user see {string} title")
+    public void user_see_title(String string) {
+        Assert.assertEquals(string,new MakePaymentPage().paymentConfirmTitle.getText());
+    }
+    @Then("user click Close button")
+    public void user_click_Close_button() {
+        new MakePaymentPage().confirmCloseButton.click();
     }
 
 

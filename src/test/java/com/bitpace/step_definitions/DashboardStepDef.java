@@ -11,7 +11,6 @@ import java.util.List;
 public class DashboardStepDef {
     @Then("user should be see your name {string}")
     public void user_should_be_see_your_name(String userFullName) {
-
      String actualName=new DashboardPage().userName.getText();
      Assert.assertTrue(actualName.contains(userFullName));
 

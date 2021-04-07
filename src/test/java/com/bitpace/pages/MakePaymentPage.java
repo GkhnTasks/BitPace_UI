@@ -46,7 +46,20 @@ public class MakePaymentPage extends  BasePage{
     @FindBy(css = "[class='text-right']")
     public List<WebElement> makePaymentbottomInformation;
 
+    @FindBy(xpath = "//*[contains(text(),'Close')]")
+    public WebElement closeButton;
 
+    @FindBy(xpath = "//table//th")
+    public List<WebElement> historyTitle;
+
+    @FindBy(css = "[class='btn btnSendWallet']")
+    public WebElement sendButton;
+
+    @FindBy(xpath = "//h5")
+    public WebElement paymentConfirmTitle;
+
+    @FindBy(xpath = "//*[contains(text(),'Close')]")
+    public WebElement confirmCloseButton;
 
 
 

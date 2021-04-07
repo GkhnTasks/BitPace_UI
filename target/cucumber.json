@@ -1,0 +1,377 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3641738800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.bitpace.step_definitions.LoginStepDef.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user click Mercant Login button",
+            "match": {
+              "location": "com.bitpace.step_definitions.LoginStepDef.the_user_click_Mercant_Login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4817245900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters the \"admin\" information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.bitpace.step_definitions.LoginStepDef.the_user_enters_the_information(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187970200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user hover side menu",
+            "match": {
+              "location": "com.bitpace.step_definitions.OrderListStepDef.user_hover_side_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1110805900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click Withdraw Money menu",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_click_Withdraw_Money_menu()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-07T15:15:54.144Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2825549800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitpace.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User should be able to Create Withdrawal",
+        "description": "",
+        "id": "deposit-money-menu;user-should-be-able-to-create-withdrawal",
+        "after": [
+          {
+            "result": {
+              "duration": 841970600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitpace.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1109216800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click Create Withdrawal button",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_click_Create_Withdrawal_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 320228500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enter Withdrawal Amount",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_enter_Withdrawal_Amount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 505921500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user select Currency \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EUR\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_select_Currency(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3280508200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user select Bank Account",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_select_Bank_Account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2136880600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click Create Withdraw button",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_click_Create_Withdraw_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165569400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user see Withdrawal information",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_see_Withdrawal_information()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3196409600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.bitpace.step_definitions.LoginStepDef.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1002600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user click Mercant Login button",
+            "match": {
+              "location": "com.bitpace.step_definitions.LoginStepDef.the_user_click_Mercant_Login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4548973700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters the \"admin\" information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.bitpace.step_definitions.LoginStepDef.the_user_enters_the_information(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140957400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user hover side menu",
+            "match": {
+              "location": "com.bitpace.step_definitions.OrderListStepDef.user_hover_side_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1074852000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click Withdraw Money menu",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_click_Withdraw_Money_menu()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-07T15:16:15.285Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1544882500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitpace.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "User should be Cancel withdraw",
+        "description": "",
+        "id": "deposit-money-menu;user-should-be-cancel-withdraw",
+        "after": [
+          {
+            "result": {
+              "duration": 864894900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitpace.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 99964600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user click Cancel button",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_click_Cancel_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38991200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user see \"Are you sure you want to cancel the withdraw?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Are you sure you want to cancel the withdraw?\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_see(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 82986900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user click Yes button",
+            "match": {
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_click_Yes_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1044836900,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user see \"Withdraw successfully canceled\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Withdraw successfully canceled\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.bitpace.step_definitions.WithdrawMoneyStepDef.user_see_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin"
+          }
+        ]
+      }
+    ],
+    "name": "Deposit Money Menu",
+    "description": "",
+    "id": "deposit-money-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/WithdrawMoney.feature",
+    "tags": []
+  }
+]
