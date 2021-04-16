@@ -9,7 +9,7 @@ Feature: Deposit Money Menu
 
   Scenario: User should be see Deposit Money page
     Then user should see "Withdrawals" titles
-  @admin
+
   Scenario: User should be able to Create Withdrawal
     When user click Create Withdrawal button
     And user enter Withdrawal Amount
@@ -29,7 +29,7 @@ Feature: Deposit Money Menu
     |Iban : 23333222323323232323|
     |Swift Code : SWIFTXX|
     |Country Name : United Kingdom|
-  @admin
+
   Scenario: User should be Cancel withdraw
     When user click Cancel button
     Then user see "Are you sure you want to cancel the withdraw?"
