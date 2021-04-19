@@ -78,7 +78,8 @@ public class OrderListStepDef {
        String coinAmountUI=orderPage.coinAmountUI.getText();
        String amountUI=orderPage.amountUI.getText();
 
-       //API and UI match
+
+        //API and UI match
 
         Assert.assertEquals(statusAPI,statusUI);
         Assert.assertTrue(coinAmountUI.contains(coinAmountAPI));

@@ -26,7 +26,7 @@ public class OrderListPage extends BasePage {
     @FindBy(xpath = "(//table)[3]/tbody//td[5]")
     public WebElement coinAmountUI;
 
-    @FindBy(xpath = "(//table)[3]/tbody//td[8]")
+    @FindBy(xpath = "(//table)[3]/tbody//td[7]")
     public WebElement amountUI;
 
     @FindBy(css = "[placeholder='Customer Name']")

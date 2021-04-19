@@ -6,11 +6,11 @@ Feature: Orderlist functionals
     And the user enters the "admin" information
     Given user hover side menu
     When user click Order List button
-
+  @smoke
   Scenario:User should be see order list page
     Then user see Order List page
 
-
+  @smoke
   Scenario: User search by Order ıd and match API
     When user enter order ıd
     And user click search button

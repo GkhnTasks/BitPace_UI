@@ -4,9 +4,9 @@ Feature: Dashboard functionals
     Given the user is on the login page
     When the user click Mercant Login button
     And the user enters the "admin" information
-
+  @smoke
   Scenario: User should be see fullname
-    Then user should be see your name "Gokhan Guzelyurt"
+    Then user should be see your name "QA AutoTest"
 
   Scenario: User should be see filter options
     When click filter button

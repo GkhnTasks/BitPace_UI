@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Make Payment" time="159.349" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Orderlist functionals" time="70.819" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Gökhan\.m2\repository\webdriver\chromedriver\win32\89.0.4389.23\chromedriver.exe"/>
@@ -57,10 +57,58 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="User can see Make Payment page" classname="Make Payment" time="40.4"/>
-  <testcase name="User can see all currency" classname="Make Payment" time="27.268"/>
-  <testcase name="User see currency title" classname="Make Payment" time="20.069"/>
-  <testcase name="user match UI-API information" classname="Make Payment" time="31.236"/>
-  <testcase name="User should be  see Make Payment History title" classname="Make Payment" time="13.663"/>
-  <testcase name="User should be see Payment Confirmation box" classname="Make Payment" time="26.713"/>
+  <testcase name="User should be see order list page" classname="Orderlist functionals" time="42.945"/>
+  <testcase name="User search by Order ıd and match API" classname="Orderlist functionals" time="27.872">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://api-dev.bitpace.com/api/v1/auth/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "merchant_code": "20316112227",
+    "password": "oT3u8h"
+}
+{
+    "code": "00",
+    "message": "APPROVED",
+    "data": {
+        "token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJscjVKc2V0NUVXMmNuRHVsMFBaQzJXYVoydnJvQVhsaUdNN0sxTFpKZnJRIn0.eyJqdGkiOiI0NzhiMjVhNy1lYWEyLTQ0MzUtYTY0MC0wNTQwN2YwNDZjY2MiLCJleHAiOjE2MTg5MDc0MjUsIm5iZiI6MCwiaWF0IjoxNjE4ODIxMDI1LCJpc3MiOiJodHRwczovL2F1dGgtZGV2LmJpdHBhY2UuY29tL2F1dGgvcmVhbG1zL2JpdHBhY2UiLCJzdWIiOiJjOGFlNzk4Ni0zMjc4LTRkNGItYTFlNy1jZDg0MWY4Yjc4NGEiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJtZXJjaGFudC1hcGkiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiIwZjM1YzQ5OS00OTgyLTQ1YzktYWE3Zi1hZDJmNzczMDkyMzAiLCJhY3IiOiIxIiwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInJvbGVzIjpbIldJVEhEUkFXIiwiUEFZTUVOVCIsIlNFTEwiLCJCVVkiLCJERVBPU0lUIiwiUkVDRUlWRV9QQVlNRU5UIl0sInByZWZlcnJlZF91c2VybmFtZSI6IjIwMzE2MTEyMjI3IiwibWVyY2hhbnRfaWQiOiIxODUifQ.dET1MG4FgpMTruuHoTvj9VEQTr8bbZcxIEaNY6ClWvrkvWYM8TvpbClFc8pkxH2px42IkOYi2llrEMgrdA_EKxF_RM7wl212sKuJGFC9M0Sl-J2Dal6SBtnWHvMF1I8bpIxKAfSxLhGrnBFjqHgGpv64pRnVYhm274is0HrrwwDp7hQVSrYuc3ZLLqZuDvhP0N4-JvoIPVCH6jJR4KE83FNl0IOLiFH8SODwTtYiS2Mxd61InBhZApEuHNUqCrNjSd1scSZ9tNhujlMGaVNLXko7I2t0iFaN7rAekZhow8Ufco1be74pMlii7UW76_t4s0ytFmWb7o06IS0Mxyv-Qw"
+    },
+    "status": "APPROVED"
+}
+{
+    "code": "00",
+    "message": "Response Approved",
+    "data": {
+        "order_id": 42882,
+        "type": "BUY",
+        "status": "COMPLETED",
+        "order_amount": 100.00,
+        "currency": "EUR",
+        "cryptocurrency_amount": 0.002060,
+        "cryptocurrency": "BTC",
+        "blockchain_tx_id": null,
+        "blockchain_address": null
+    },
+    "status": "APPROVED",
+    "traceId": "5f074ecbf86f65a7"
+}
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 33278
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 19, 2021 11:30:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

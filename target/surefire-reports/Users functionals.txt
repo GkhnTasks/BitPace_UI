@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Users functionals
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 46.073 s <<< FAILURE! - in Users functionals
+User should be see Users page(Users functionals)  Time elapsed: 46.073 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<gokhan.guzelyurt+01@[hotmail].com> but was:<gokhan.guzelyurt+01@[sgveteris].com>
+

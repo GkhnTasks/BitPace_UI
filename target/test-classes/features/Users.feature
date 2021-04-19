@@ -6,13 +6,13 @@ Feature: Users functionals
     And the user enters the "admin" information
     Given user hover side menu
     When user click Users menu
-
-  Scenario: User should be see Deposit Money page
+  @test
+  Scenario: User should be see Users page
     Then user see "User List" titles
     Then user see user information
     |QA|
-    |Test|
-    |gokhan.guzelyurt+02@hotmail.com|
+    |Account|
+    |gokhan.guzelyurt+01@hotmail.com|
     |Click to see detailed privileges|
     |ADMIN|
 
@@ -37,6 +37,6 @@ Feature: Users functionals
     When user click Delete button
     Then user see "Are you sure you want to delete the record?" text
     And user click Yes btton
-    Then user see "Record successfully delete" texts
+    Then user see "Recording successfully deleted" texts
 
 

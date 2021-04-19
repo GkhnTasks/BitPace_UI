@@ -6,13 +6,13 @@ Feature: Users functionals
     And the user enters the "admin" information
     Given user hover side menu
     When user click Users menu
-
-  Scenario: User should be see Deposit Money page
+  @test
+  Scenario: User should be see Users page
     Then user see "User List" titles
     Then user see user information
     |QA|
-    |Test|
-    |gokhan.guzelyurt+02@hotmail.com|
+    |Account|
+    |gokhan.guzelyurt+01@sgveteris.com|
     |Click to see detailed privileges|
     |ADMIN|
 

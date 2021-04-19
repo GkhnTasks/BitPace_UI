@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: Make Payment
+Test set: Deposit Money Menu
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 159.349 s - in Make Payment
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 102.551 s - in Deposit Money Menu

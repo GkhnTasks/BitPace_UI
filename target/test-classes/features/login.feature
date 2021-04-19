@@ -1,6 +1,6 @@
 Feature: Users should be able to login
 
-
+  @smoke
   Scenario: Login as a admin
     Given the user is on the login page
     When the user click Mercant Login button

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Make Payment" time="159.349" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Deposit Money Menu" time="102.551" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Gökhan\.m2\repository\webdriver\chromedriver\win32\89.0.4389.23\chromedriver.exe"/>
@@ -57,10 +57,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="User can see Make Payment page" classname="Make Payment" time="40.4"/>
-  <testcase name="User can see all currency" classname="Make Payment" time="27.268"/>
-  <testcase name="User see currency title" classname="Make Payment" time="20.069"/>
-  <testcase name="user match UI-API information" classname="Make Payment" time="31.236"/>
-  <testcase name="User should be  see Make Payment History title" classname="Make Payment" time="13.663"/>
-  <testcase name="User should be see Payment Confirmation box" classname="Make Payment" time="26.713"/>
+  <testcase name="User should be see Deposit Money page" classname="Deposit Money Menu" time="45.913"/>
+  <testcase name="User should be see Deposit Money page" classname="Deposit Money Menu" time="42.872"/>
+  <testcase name="User should be able to Create Withdrawal" classname="Deposit Money Menu" time="27.287"/>
+  <testcase name="User should be see withdraw detail" classname="Deposit Money Menu" time="14.054"/>
+  <testcase name="User should be Cancel withdraw" classname="Deposit Money Menu" time="15.297"/>
 </testsuite>

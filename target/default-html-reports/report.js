@@ -63,54 +63,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be delete any user",
+  "name": "User should be see Users page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@admin"
+      "name": "@test"
     }
   ]
 });
 formatter.step({
-  "name": "user click Delete button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.bitpace.step_definitions.UsersStepDef.user_click_Delete_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user see \"Are you sure you want to delete the record?\" text",
+  "name": "user see \"User List\" titles",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.bitpace.step_definitions.UsersStepDef.user_see_text(java.lang.String)"
+  "location": "com.bitpace.step_definitions.UsersStepDef.user_see_titles(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click Yes btton",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.bitpace.step_definitions.UsersStepDef.user_click_Yes_btton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user see \"Record successfully delete\" texts",
+  "name": "user see user information",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.bitpace.step_definitions.UsersStepDef.user_see_texts(java.lang.String)"
+  "location": "com.bitpace.step_definitions.UsersStepDef.user_see_user_information(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cRecord[ successfully delete]\u003e but was:\u003cRecord[ing successfully deleted]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.bitpace.step_definitions.UsersStepDef.user_see_texts(UsersStepDef.java:127)\r\n\tat ✽.user see \"Record successfully delete\" texts(file:///C:/Users/Gökhan/IdeaProjects/BitPace_UI/src/test/resources/features/Users.feature:40)\r\n",
+  "error_message": "org.junit.ComparisonFailure: expected:\u003cgokhan.guzelyurt+01@[hotmail].com\u003e but was:\u003cgokhan.guzelyurt+01@[sgveteris].com\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.bitpace.step_definitions.UsersStepDef.user_see_user_information(UsersStepDef.java:34)\r\n\tat ✽.user see user information(file:///C:/Users/Gökhan/IdeaProjects/BitPace_UI/src/test/resources/features/Users.feature:12)\r\n",
   "status": "failed"
 });
 formatter.embedding("image/png", "embedded0.png", "screenshot");

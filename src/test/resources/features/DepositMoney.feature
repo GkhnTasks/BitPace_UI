@@ -5,7 +5,7 @@ Feature: Deposit Money Menu
     When the user click Mercant Login button
     And the user enters the "admin" information
     Given user hover side menu
-
+  @smoke
   Scenario: User should be see Deposit Money page
     When user click Deposit Money menu
     And user check pop up message and click Agree
