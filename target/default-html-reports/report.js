@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Users.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Support.feature");
 formatter.feature({
-  "name": "Users functionals",
+  "name": "Support Functional",
   "description": "",
   "keyword": "Feature"
 });
@@ -52,18 +52,8 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "user click Users menu",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.bitpace.step_definitions.UsersStepDef.user_click_Users_menu()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenario({
-  "name": "User should be see Users page",
+  "name": "User should be send message to support",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -73,34 +63,45 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user see \"User List\" titles",
-  "keyword": "Then "
+  "name": "user click Support menu title",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.bitpace.step_definitions.UsersStepDef.user_see_titles(java.lang.String)"
+  "location": "com.bitpace.step_definitions.SupportStepDef.user_click_Support_menu_title()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user see user information",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
+  "name": "user fill in the blank on support page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.bitpace.step_definitions.SupportStepDef.user_fill_in_the_blank_on_support_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click Submit button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.bitpace.step_definitions.SupportStepDef.user_click_Submit_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user see confirm message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.bitpace.step_definitions.UsersStepDef.user_see_user_information(java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.bitpace.step_definitions.SupportStepDef.user_see_confirm_message()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cgokhan.guzelyurt+01@[hotmail].com\u003e but was:\u003cgokhan.guzelyurt+01@[sgveteris].com\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.bitpace.step_definitions.UsersStepDef.user_see_user_information(UsersStepDef.java:34)\r\n\tat ✽.user see user information(file:///C:/Users/Gökhan/IdeaProjects/BitPace_UI/src/test/resources/features/Users.feature:12)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

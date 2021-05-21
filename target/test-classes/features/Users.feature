@@ -6,13 +6,13 @@ Feature: Users functionals
     And the user enters the "admin" information
     Given user hover side menu
     When user click Users menu
-  @test
+
   Scenario: User should be see Users page
     Then user see "User List" titles
     Then user see user information
     |QA|
     |Account|
-    |gokhan.guzelyurt+01@hotmail.com|
+    |gokhan.guzelyurt+01@sgveteris.com|
     |Click to see detailed privileges|
     |ADMIN|
 
@@ -32,7 +32,7 @@ Feature: Users functionals
     And user change Task Privilages
     And user click Update User button
     Then user see main page
-  @admin
+
   Scenario: User should be delete any user
     When user click Delete button
     Then user see "Are you sure you want to delete the record?" text
