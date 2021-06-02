@@ -30,6 +30,17 @@ public class ReceivePaymentPage extends BasePage{
     @FindBy(css = "[class='d-block text-success']")
     public WebElement URLCopiedText;
 
+    @FindBy(css = "[name='firstName']")
+    public WebElement firstName;
+
+    @FindBy(css = "[name='lastName']")
+    public WebElement lastName;
+
+    @FindBy(css = "[name='email']")
+    public WebElement email;
+
+
+
 
 
 }

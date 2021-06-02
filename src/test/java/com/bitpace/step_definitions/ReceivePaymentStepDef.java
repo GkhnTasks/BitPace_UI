@@ -32,15 +32,11 @@ public class ReceivePaymentStepDef {
     public void user_should_be_able_to_fill_in_the_blank() {
         ReceivePaymentPage receivePaymentPage=new ReceivePaymentPage();
 
-        Actions act=new Actions(Driver.get());
-        act.click(receivePaymentPage.currencyAmount)
-                .sendKeys("250",Keys.TAB)
-                .sendKeys("Test",Keys.TAB)
-                .sendKeys("",Keys.TAB)
-                .sendKeys("test",Keys.TAB)
-                .sendKeys("qa@test.com",Keys.TAB).build().perform();
-
-
+        receivePaymentPage.currencyAmount.sendKeys("250");
+        receivePaymentPage.firstName.sendKeys("Test");
+        receivePaymentPage.lastName.sendKeys("qa");
+        receivePaymentPage.email.sendKeys("qa@mail.com");
+        BrowserUtils.waitFor(2);
 
     }
 

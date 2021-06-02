@@ -80,8 +80,7 @@ formatter.match({
   "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_should_be_able_to_fill_in_the_blank()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.util.Objects.requireNonNull(Objects.java:222)\r\n\tat org.openqa.selenium.interactions.Actions.\u003cinit\u003e(Actions.java:65)\r\n\tat com.bitpace.step_definitions.ReceivePaymentStepDef.user_should_be_able_to_fill_in_the_blank(ReceivePaymentStepDef.java:35)\r\n\tat ✽.user should be able to fill in the blank(file:///C:/Users/Gökhan/IdeaProjects/BitPace_UI/src/test/resources/features/ReceivePayment.feature:16)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user click Create Payment URL button",
@@ -91,7 +90,7 @@ formatter.match({
   "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_click_Create_Payment_URL_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user see \"Payment URL\" text and \"Create New\" button",
@@ -101,7 +100,7 @@ formatter.match({
   "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_see_text_and_button(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user click copy icon",
@@ -111,7 +110,7 @@ formatter.match({
   "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_click_copy_icon()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user see \"Copy URL\" txt",
@@ -121,7 +120,8 @@ formatter.match({
   "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_see_txt(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Copy URL]\u003e but was:\u003c[URL Copied]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.bitpace.step_definitions.ReceivePaymentStepDef.user_see_txt(ReceivePaymentStepDef.java:64)\r\n\tat ✽.user see \"Copy URL\" txt(file:///C:/Users/Gökhan/IdeaProjects/BitPace_UI/src/test/resources/features/ReceivePayment.feature:20)\r\n",
+  "status": "failed"
 });
 formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
