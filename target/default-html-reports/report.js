@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ReceivePayment.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/tradeBuy.feature");
 formatter.feature({
-  "name": "Receive Payment Function",
+  "name": "Trade Buy",
   "description": "",
   "keyword": "Feature"
 });
@@ -53,17 +53,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click Receive Payment menu icon",
-  "keyword": "Given "
+  "name": "user click Trade title",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_click_Receive_Payment_menu_icon()"
+  "location": "com.bitpace.step_definitions.TradeStepDef.user_click_Trade_title()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be create payment url",
+  "name": "User should be make buy transaction",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -73,57 +73,75 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user should be able to fill in the blank",
+  "name": "click Buy menu item",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_should_be_able_to_fill_in_the_blank()"
+  "location": "com.bitpace.step_definitions.TradeBuyStepDef.click_Buy_menu_item()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click Create Payment URL button",
+  "name": "user see Trade buy title",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.bitpace.step_definitions.TradeBuyStepDef.user_see_Trade_buy_title()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enter value in  EUR Amount box for Trade Buy",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_click_Create_Payment_URL_button()"
+  "location": "com.bitpace.step_definitions.TradeBuyStepDef.enter_value_in_EUR_Amount_box_for_Trade_Buy()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user see \"Payment URL\" text and \"Create New\" button",
+  "name": "user select cryptocurrency \"ETH\" for Trade Buy",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.bitpace.step_definitions.TradeBuyStepDef.user_select_cryptocurrency_for_Trade_Buy(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click Buy button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.bitpace.step_definitions.TradeBuyStepDef.click_Buy_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click confirm",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.bitpace.step_definitions.TradeBuyStepDef.click_confirm()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user see success page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_see_text_and_button(java.lang.String,java.lang.String)"
+  "location": "com.bitpace.step_definitions.TradeBuyStepDef.user_see_success_page()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "user click copy icon",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_click_copy_icon()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user see \"Copy URL\" txt",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.bitpace.step_definitions.ReceivePaymentStepDef.user_see_txt(java.lang.String)"
-});
-formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Copy URL]\u003e but was:\u003c[URL Copied]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.bitpace.step_definitions.ReceivePaymentStepDef.user_see_txt(ReceivePaymentStepDef.java:64)\r\n\tat ✽.user see \"Copy URL\" txt(file:///C:/Users/Gökhan/IdeaProjects/BitPace_UI/src/test/resources/features/ReceivePayment.feature:20)\r\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

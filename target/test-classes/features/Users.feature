@@ -6,7 +6,7 @@ Feature: Users functionals
     And the user enters the "admin" information
     Given user hover side menu
     When user click Users menu
-
+  @smoke
   Scenario: User should be see Users page
     Then user see "User List" titles
     Then user see user information
@@ -15,7 +15,7 @@ Feature: Users functionals
     |gokhan.guzelyurt+01@sgveteris.com|
     |Click to see detailed privileges|
     |ADMIN|
-
+  @smoke
   Scenario:User should be see User Logs page
     When user click User Logs
     Then user see "User Logs" page

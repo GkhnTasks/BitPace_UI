@@ -11,10 +11,10 @@ Feature: Receive Payment Function
   Scenario: User should be see Receive Payment section
     Then user should be see "Receive Payment" title
 
-  @test
+  @smoke
   Scenario: User should be create payment url
     When user should be able to fill in the blank
     And user click Create Payment URL button
     Then user see "Payment URL" text and "Create New" button
     When user click copy icon
-    Then user see "Copy URL" txt
+    Then user see "URL Copied" txt
