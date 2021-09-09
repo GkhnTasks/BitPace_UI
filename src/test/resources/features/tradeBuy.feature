@@ -6,7 +6,7 @@ Feature: Trade Buy
     And the user enters the "admin" information
     Given user hover side menu
     When user click Trade title
-    @test
+    @smoke
   Scenario:User should be make buy transaction
     When click Buy menu item
     Then user see Trade buy title

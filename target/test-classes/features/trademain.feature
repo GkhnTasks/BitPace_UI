@@ -6,7 +6,7 @@ Feature: Trade main page
     And the user enters the "admin" information
     Given user hover side menu
 
-
+  @smoke
   Scenario: User should be see Trade page
     When user click Trade title
     Then user see Trade page and history title
