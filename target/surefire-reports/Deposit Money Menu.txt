@@ -1,4 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: Deposit Money Menu
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 102.551 s - in Deposit Money Menu
+Tests run: 5, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 144.147 s <<< FAILURE! - in Deposit Money Menu
+User should be see Deposit Money page(Deposit Money Menu)  Time elapsed: 91.052 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"[for='checkbox-1']"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA9OM3D', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\GKHAN~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f5ec838eeb3181b4bdadd015ac43abbb
+*** Element info: {Using=css selector, value=[for='checkbox-1']}
+
+User should be able to Create Withdrawal(Deposit Money Menu)  Time elapsed: 33.403 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"[aria-label='Withdrawal Amount']"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA9OM3D', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\GKHAN~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57406}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8020f86ea726d44d51c993ec5182a6e
+*** Element info: {Using=css selector, value=[aria-label='Withdrawal Amount']}
+
+User should be see withdraw detail(Deposit Money Menu)  Time elapsed: 14.341 s  <<< FAILURE!
+java.lang.AssertionError: expected:<[Amount: 250, Currency: Euro, Bank information: QA bank information, Bank Name: QA Bank, Iban : 23333222323323232323, Swift Code : SWIFTXX, Country Name : United Kingdom]> but was:<[Amount: 1001, Currency: Euro, Bank information: adfsd, Bank Name: dgdfg, Iban : fdfdfdfd, Swift Code : fdgdfg, Country Name : Djibouti]>
+

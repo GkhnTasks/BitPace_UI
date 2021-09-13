@@ -11,19 +11,19 @@ public class SupportStepDef {
     @Given("user click Support menu title")
     public void user_click_Support_menu_title() {
         new SupportPage().support.click();
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(2);
 
     }
 
     @When("user fill in the blank on support page")
     public void user_fill_in_the_blank_on_support_page() {
-        new SupportPage().messageSection.sendKeys("Can you help me?");
+        new SupportPage().messageSection.sendKeys("QA Test.Gokhan.Can you help me?");
 
     }
     @When("user click Submit button")
     public void user_click_Submit_button() {
         new SupportPage().submitButton.click();
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(2);
 
     }
     @Then("user see confirm message")

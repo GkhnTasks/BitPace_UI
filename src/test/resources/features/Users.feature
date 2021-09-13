@@ -11,8 +11,8 @@ Feature: Users functionals
     Then user see "User List" titles
     Then user see user information
     |QA|
-    |Account|
-    |gokhan.guzelyurt+01@sgveteris.com|
+    |AutoTest|
+    |gokhan.guzelyurt+02@sgveteris.com|
     |Click to see detailed privileges|
     |ADMIN|
   @smoke

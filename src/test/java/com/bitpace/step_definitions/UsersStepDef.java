@@ -16,7 +16,7 @@ public class UsersStepDef {
     @When("user click Users menu")
     public void user_click_Users_menu() {
         new UsersPage().userstList.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
 
     }
 

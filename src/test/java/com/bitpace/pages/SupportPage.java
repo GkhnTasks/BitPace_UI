@@ -8,7 +8,7 @@ public class SupportPage extends BasePage{
     @FindBy(xpath = "//span[contains(text(),'Support')]")
     public WebElement support;
 
-    @FindBy(css = "[aria-label='Message']")
+    @FindBy(tagName= "textarea")
     public WebElement messageSection;
 
     @FindBy(xpath = "(//*[@type='button'])[5]")

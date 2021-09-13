@@ -8,10 +8,10 @@ public class DepositMoneyPage extends BasePage {
     @FindBy(xpath = "//span[contains(text(),'Deposit Money')]")
     public WebElement depositMoney;
 
-    @FindBy(css = "[for='checkbox-1']")
+    @FindBy(xpath = "(//*[@class='v-input__slot'])[1]")
     public WebElement checkBox1;
 
-    @FindBy(css = "[for='checkbox-2']")
+    @FindBy(xpath= "(//*[@class='v-input__slot'])[2]")
     public WebElement checkBox2;
 
     @FindBy(xpath = "//*[contains(text(),'I AGREE')]")

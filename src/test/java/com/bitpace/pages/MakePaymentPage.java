@@ -52,7 +52,7 @@ public class MakePaymentPage extends  BasePage{
     @FindBy(xpath = "//table//th")
     public List<WebElement> historyTitle;
 
-    @FindBy(css = "[class='btn btnSendWallet']")
+    @FindBy(xpath = "//span[contains(text(),'Send')]")
     public WebElement sendButton;
 
     @FindBy(xpath = "//h5")

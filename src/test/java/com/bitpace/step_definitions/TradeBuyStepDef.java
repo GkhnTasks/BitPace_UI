@@ -46,7 +46,7 @@ public class TradeBuyStepDef {
     @Then("Click confirm")
     public void click_confirm() {
         new TradeBuyPage().confirmButton.click();
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(4);
 
     }
     @Then("user see success page")

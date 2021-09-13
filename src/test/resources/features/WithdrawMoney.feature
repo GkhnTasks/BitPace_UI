@@ -22,13 +22,13 @@ Feature: Deposit Money Menu
     When click search icon
     Then user see "Detail" header
     Then user see withdraw detail
-    |Amount: 250|
+    |Amount: 2500|
     |Currency: Euro|
-    |Bank information: QA bank information|
-    |Bank Name: QA Bank|
-    |Iban : 23333222323323232323|
-    |Swift Code : SWIFTXX|
-    |Country Name : United Kingdom|
+    |Bank information: turkey bank|
+    |Bank Name: test bank|
+    |Iban : 34535435435|
+    |Swift Code : testxx|
+    |Country Name : Turkey|
   @smoke
   Scenario: User should be Cancel withdraw
     When user click Cancel button

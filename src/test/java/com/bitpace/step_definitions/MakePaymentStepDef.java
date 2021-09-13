@@ -177,6 +177,7 @@ public class MakePaymentStepDef {
     @When("user click Send button")
     public void user_click_Send_button() {
         new MakePaymentPage().sendButton.click();
+        BrowserUtils.waitFor(1);
     }
     @Then("user see {string} title")
     public void user_see_title(String string) {
