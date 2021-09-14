@@ -79,6 +79,9 @@ public class Driver {
                 case "browserStack":
                     final String USERNAME = "gokhanguzelyurt1";
                     final String AUTOMATE_KEY = "L1PJccVqHxNt2hkAZkNQ";
+                    String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+                    String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
+                    String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
                     final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
                     DesiredCapabilities caps = new DesiredCapabilities();
                     caps.setCapability("os", "Windows");
@@ -87,6 +90,9 @@ public class Driver {
                     caps.setCapability("browser_version", "latest");
                     caps.setCapability("project", "Bitpace");
                     caps.setCapability("build", "Bitpace");
+                    caps.setCapability("build", buildName); // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
+                    caps.setCapability("browserstack.local", browserstackLocal);
+                    caps.setCapability("browserstack.localIdentifier", browserstackLocalIdentifier);
                     String idForTxtFile = new SimpleDateFormat("dd.MM.yyyy_HH.mm.ss").format(new Date());
                     caps.setCapability("name", idForTxtFile+" Smoke_Test");
                     try {
