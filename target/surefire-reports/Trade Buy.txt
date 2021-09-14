@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Trade Buy
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 95.816 s <<< FAILURE! - in Trade Buy
+User should be make buy transaction(Trade Buy)  Time elapsed: 95.816 s  <<< FAILURE!
+java.lang.AssertionError
+
