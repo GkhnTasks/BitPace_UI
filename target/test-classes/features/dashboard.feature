@@ -7,7 +7,7 @@ Feature: Dashboard functionals
   @smoke
   Scenario: User should be see fullname
     Then user should be see your name "QA AutoTest"
-
+@task
   Scenario: User should be see filter options
     When click filter button
     Then usershould be see filter list

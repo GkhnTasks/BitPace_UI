@@ -1,3 +1,1 @@
-file:src/test/resources/features/dashboard.feature:8
-file:src/test/resources/features/MakePayment.feature:32
-file:src/test/resources/features/WithdrawMoney.feature:13:33
+file:src/test/resources/features/dashboard.feature:11

@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/bitpace/step_definitions",
         dryRun = false,
-        tags = "@smoke"
+        tags = "@task"
 )
 public class CukesRunner {
 }
