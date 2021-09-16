@@ -77,10 +77,8 @@ formatter.match({
   "location": "com.bitpace.step_definitions.DashboardStepDef.usershould_be_see_filter_list(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c[TODAY, YESTERDAY, LAST WEEK, LAST MONTH, LAST YEAR]\u003e but was:\u003c[TODAY, YESTERDAY, LAST WEEK, LAST MONTH, LAST YEAR, , , , , ]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.bitpace.step_definitions.DashboardStepDef.usershould_be_see_filter_list(DashboardStepDef.java:29)\r\n\tat ✽.usershould be see filter list(file:///C:/Users/Gökhan/IdeaProjects/BitPace_UI/src/test/resources/features/dashboard.feature:13)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

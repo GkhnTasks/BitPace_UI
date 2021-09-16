@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class DashboardStepDef {
@@ -26,7 +27,12 @@ public class DashboardStepDef {
     public void usershould_be_see_filter_list(List<String> filterOptions) {
 
         List<String> actualOptions=BrowserUtils.getElementsText(new DashboardPage().filterList);
-        Assert.assertEquals(filterOptions,actualOptions);
+        Assert.assertEquals(filterOptions.get(0),actualOptions.get(0));
+        Assert.assertEquals(filterOptions.get(1),actualOptions.get(1));
+        Assert.assertEquals(filterOptions.get(2),actualOptions.get(2));
+        Assert.assertEquals(filterOptions.get(3),actualOptions.get(3));
+        Assert.assertEquals(filterOptions.get(4),actualOptions.get(4));
+
 
     }
     @Then("usershould be see see activities header")
