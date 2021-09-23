@@ -151,10 +151,10 @@ public class MakePaymentStepDef {
     //MATCH UI-API
 
         Assert.assertEquals(API_cryptocurrency_amount,UI_cryptocurrency_amount,1);
-        String FıatAmount=String.valueOf(UI_FIAT_amount);
+        String FiatAmount=String.valueOf(UI_FIAT_amount);
         SoftAssertions softAssertions = new SoftAssertions();
-        softAssertions.assertThat(FıatAmount.equals(df.format(totalAmount)));
-        Assert.assertEquals(FıatAmount,df.format(totalAmount));
+        softAssertions.assertThat(FiatAmount.equals(df.format(totalAmount)));
+        Assert.assertEquals(FiatAmount,df.format(totalAmount));
         softAssertions.assertAll();
     }
     @Then("user see all title")

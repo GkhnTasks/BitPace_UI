@@ -34,13 +34,12 @@ public class OrderListStepDef {
     }
     @Then("user see Order List page")
     public void user_see_Order_List_page() {
-
         String expectedUrl="https://merchant-dev.bitpace.com/orders";
         String actualUrl= Driver.get().getCurrentUrl();
         Assert.assertEquals(actualUrl,expectedUrl);
     }
     @When("user enter order ıd")
-    public void user_enter_order_ıd() {
+    public void user_enter_order_id() {
 
      new OrderListPage().orderId.sendKeys(ConfigurationReader.get("orderId"));
     }

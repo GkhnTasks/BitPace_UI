@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Dashboard functionals
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.435 s - in Dashboard functionals
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.28 s - in Dashboard functionals
